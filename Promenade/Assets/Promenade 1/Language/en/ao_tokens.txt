@@ -1,0 +1,11 @@
+{
+	"strings": {
+		"WORM_MAP_AO_NAME": "Ancient Observatory",
+		"WORM_MAP_AO_SUBTITLE": "Bulwark's Prospect",
+		"WORM_BAZAAR_SEER_AO": "<style=cWorldEvent>You dream of distant stars.</style>",
+		"WORM_MAP_AO_LORE": "You spend so much time looking up at that dark sea, brother. What is it that you see, if I may ask?\r\n\r\nOh! Yes, of course. The stars are beautiful, I agree.\r\n\r\n...Yes, I see that, too. What a pitiable little rock.\r\n\r\nWell, please do not dwell on such things. We are trapped here ourselves, you know. There is nothing we can do for them.",
+
+		"UNLOCKABLE_LOG_STAGES_AOSCENE": "Environment Log: Ancient Observatory"
+		
+	}
+}

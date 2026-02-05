@@ -3,12 +3,12 @@ An alternate Stage 5 environment, created from scratch in the style of vanilla m
 
 The map's a bit larger than Sky Meadow and has a somewhat multi-layered layout, with cliffs, slopes, and caves to navigate. There are jump pads scattered throughout to help with traversal.
 
-![](https://cdn.discordapp.com/attachments/560621976306319360/1468767465155596449/preview_ruins_2.png?ex=698537cc&is=6983e64c&hm=e92d6da9889d4a344888ee2d1c38e211905d946ed7b9e8ea1fcd3a147ef25e83)
+![](https://github.com/CalculatorSoup/Ancient_Observatory/blob/main/Promenade/Assets/preview%20ruins.png?raw=true)
 
 ## Simulacrum
-This map also comes with its own Void-themed variant, with a few (very) minor changes, exclusive to SotV's Simulacrum gamemode.
+This mod also includes a Void replication of Ancient Observatory with some (very) minor changes, exclusive to SotV's Simulacrum gamemode.
 
-![](https://cdn.discordapp.com/attachments/560621976306319360/1468389293948014785/preview_simulacrum.png?ex=6983d799&is=69828619&hm=fc4a8fe65545ebbd1a3db3e4b7ef6f80bf2e232572ee18866ba82e40335ef288&)
+![](https://github.com/CalculatorSoup/Ancient_Observatory/blob/main/Promenade/Assets/preview%20simulacrum.png?raw=true)
 
 ## Other Features
 - Config options
@@ -16,7 +16,7 @@ This map also comes with its own Void-themed variant, with a few (very) minor ch
   - Simulacrum variant can appear (true/false)
   - Simulacrum variant can appear as Stage 1 (true/false)
   - Toggles for modded enemies
-- Some enemies from mods can appear if their respective mod is enabled
+- Some modded enemies can appear if their respective mod is enabled
   - [EnemiesReturns](https://thunderstore.io/package/Risky_Sleeps/EnemiesReturns/): Swift, Colossus
   - [Sandswept](https://thunderstore.io/package/SandsweptTeam/Sandswept/): Cannonball Jellyfish
   - [ForgottenRelics](https://thunderstore.io/package/pseudopulse/RelicsFix/): Brass Monolith
@@ -26,7 +26,7 @@ This map also comes with its own Void-themed variant, with a few (very) minor ch
 Please let me know on GitHub and/or Discord (@worms / @ry6240) if you encounter any issues with the map. Also feel free to message me if you have suggestions or other feedback!
 
 **Known issues:**
-- The map doesn't have an artifact code teleporter
+- The map doesn't have an artifact teleporter
   - I really wanted to include this, but just couldn't figure out how to get it fully working. Sorry :(
 
-![](https://cdn.discordapp.com/attachments/560621976306319360/1468389294426161234/preview_thumb.png?ex=6983d799&is=69828619&hm=d2f414f71c7189b90c3def7ea9ed604f34fe638a4b69f07d8cededd9419b1fc3&)
+![](https://github.com/CalculatorSoup/Ancient_Observatory/blob/main/Promenade/Assets/preview%20thumb.png?raw=true)

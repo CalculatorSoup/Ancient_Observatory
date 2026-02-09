@@ -129,27 +129,6 @@ MonoBehaviour:
         _canLoadFromCatalog: 0
     - spawnCard:
         _asset: {fileID: 0}
-        _address: 3f78bcc1024d47f42b6fcde3e19099e7
-        _useDirectReference: 0
-      selectionWeight: 1
-      spawnDistance: 0
-      preventOverhead: 0
-      minimumStageCompletions: 2
-      requiredUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-        _canLoadFromCatalog: 0
-      forbiddenUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-        _canLoadFromCatalog: 0
-    selectionWeight: 2
-  - name: Basic Monsters
-    cards:
-    - spawnCard:
-        _asset: {fileID: 0}
         _address: 10dbafc2b8f01ce4aacea2bc269628b5
         _useDirectReference: 0
       selectionWeight: 2
@@ -166,6 +145,9 @@ MonoBehaviour:
         _address: 
         _useDirectReference: 0
         _canLoadFromCatalog: 0
+    selectionWeight: 2
+  - name: Basic Monsters
+    cards:
     - spawnCard:
         _asset: {fileID: 0}
         _address: bd7bf486555b2a44a9cf82acec23fd10
@@ -187,24 +169,6 @@ MonoBehaviour:
     - spawnCard:
         _asset: {fileID: 0}
         _address: 79a0217696fe62f40a8e88f039987a2c
-        _useDirectReference: 0
-      selectionWeight: 2
-      spawnDistance: 2
-      preventOverhead: 0
-      minimumStageCompletions: 0
-      requiredUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-        _canLoadFromCatalog: 0
-      forbiddenUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-        _canLoadFromCatalog: 0
-    - spawnCard:
-        _asset: {fileID: 0}
-        _address: 611dc8fd5f486b24783f075c9d10ed06
         _useDirectReference: 0
       selectionWeight: 2
       spawnDistance: 0

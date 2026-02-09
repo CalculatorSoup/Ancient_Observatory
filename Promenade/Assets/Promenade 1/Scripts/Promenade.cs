@@ -42,7 +42,7 @@ namespace Promenade
 
         public const string Name = "Ancient_Observatory";
 
-        public const string Version = "0.2.0";
+        public const string Version = "0.2.1";
 
         public const string GUID = Author + "." + Name;
 

@@ -39,7 +39,7 @@ MonoBehaviour:
     value: 0
   fogColorStart:
     overrideState: 1
-    value: {r: 0.09055714, g: 0.103773594, b: 0.09496263, a: 0.24705882}
+    value: {r: 0, g: 0, b: 0, a: 0}
   fogColorMid:
     overrideState: 1
     value: {r: 0.20710216, g: 0.2293743, b: 0.24528301, a: 0.78431374}

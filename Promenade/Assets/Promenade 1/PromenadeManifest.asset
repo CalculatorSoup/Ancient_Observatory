@@ -30,7 +30,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StagingPaths:
   - <MSUBuildPath>
-  url: 
+  url: https://github.com/CalculatorSoup/Ancient_Observatory
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

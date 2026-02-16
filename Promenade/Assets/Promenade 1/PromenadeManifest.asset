@@ -69,6 +69,7 @@ MonoBehaviour:
   includeMetaFiles: 0
   files:
   - {fileID: 102900000, guid: f191b1ff9c64a8347b3bad85da459e87, type: 3}
+  - {fileID: 102900000, guid: eb9acef957f6d2f45a08ac14223c9d6e, type: 3}
 --- !u!114 &2493102646770600095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,7 +88,7 @@ MonoBehaviour:
   Name: Ancient_Observatory
   Description: An alternate Stage 5 map set in a dormant observatory on a vast floating
     island. Also includes a Simulacrum variant!
-  Version: 0.2.1
+  Version: 0.2.2
   Dependencies:
   - {fileID: 11400000, guid: d7d8ed5ac59df8acbbc4983f1ebba079, type: 2}
   - {fileID: 11400000, guid: 98480314448d120c05e373472456e52b, type: 2}

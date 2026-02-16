@@ -22,7 +22,7 @@ namespace Promenade
         public static void AddEnemies()
         {
             // Colossus
-            if (Promenade.toggleColossus.Value && Colossus.Enabled.Value)
+            if (Promenade.toggleColossus.Value && General.EnableColossus.Value)
             {
                 var colossusCard = new RoR2.DirectorCard()
                 {
@@ -52,7 +52,7 @@ namespace Promenade
             }
 
             // Swift
-            if (Promenade.toggleSwift.Value && Swift.Enabled.Value)
+            if (Promenade.toggleSwift.Value && General.EnableSwift.Value)
             {
                 var swiftCard = new RoR2.DirectorCard()
                 {

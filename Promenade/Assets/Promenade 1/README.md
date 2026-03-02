@@ -25,8 +25,4 @@ This mod also includes a Void replication of Ancient Observatory with some (very
 ## Bugs / Issues
 Please let me know on GitHub and/or Discord (@worms / @ry6240) if you encounter any issues with the map. Also feel free to message me if you have suggestions or other feedback!
 
-**Known issues:**
-- The map doesn't have an artifact teleporter
-  - I really wanted to include this, but just couldn't figure out how to get it fully working. Sorry :(
-
 ![](https://github.com/CalculatorSoup/Ancient_Observatory/blob/main/Promenade/Assets/preview%20thumb.png?raw=true)

@@ -42,7 +42,7 @@ namespace Promenade
 
         public const string Name = "Ancient_Observatory";
 
-        public const string Version = "0.2.2";
+        public const string Version = "1.0.0";
 
         public const string GUID = Author + "." + Name;
 
@@ -71,7 +71,7 @@ namespace Promenade
 
             RoR2.Language.collectLanguageRootFolders += CollectLanguageRootFolders;
 
-            //SceneManager.sceneLoaded += ArtifactTeleporterSetup;
+            SceneManager.sceneLoaded += ArtifactTeleporterSetup;
 
             RoR2.RoR2Application.onLoadFinished += AddModdedEnemies;
 
@@ -95,8 +95,8 @@ namespace Promenade
             }
         }
 
-        // Currently-unused and extremely messy and unfinished function that was meant to take the artifact TP prefab I instantiate into the map and horribly disfigure it such that
-        // clients in multiplayer runs could use the controls. It doesn't work.
+        // Instantiate Artifact Portal doesn't include props, and some artifact portal props aren't available as prefabs, so instead I just add the prefab with the teleporter + sky meadow island
+        // and hide the objects I don't want
         public void ArtifactTeleporterSetup(Scene newScene, LoadSceneMode loadSceneMode)
         {
             if (newScene.name == "observatory_wormsworms")
@@ -106,94 +106,42 @@ namespace Promenade
                 "LShapeScaffolding", "StaircaseScaffolding", "Formula/spmSMGrassSmallCluster", "Formula/spmSMGrassSmallCluster (1)", "Formula/spmSMGrassSmallCluster (2)",
                 "Formula/spmSMFruitPlant", "PortalDialer/spmSMGrassSmallCluster (3)", "PortalDialer/spmSMGrassSmallCluster (4)",
                 "PortalDialerButton 1", "PortalDialerButton 2", "PortalDialerButton 3", "PortalDialerButton 4", "PortalDialerButton 5", "PortalDialerButton 6", "PortalDialerButton 7",
-                "PortalDialerButton 8", "PortalDialerButton 9"
+                "PortalDialerButton 8", "PortalDialerButton 9", "PortalDialer", "Final Zone/MiscProps"
                 };
 
-                // probably could just do a for loop instead of this
-                string[] newDialerNames =
-                {
-                    "Dialer Button 1",
-                    "Dialer Button 2",
-                    "Dialer Button 3",
-                    "Dialer Button 4",
-                    "Dialer Button 5",
-                    "Dialer Button 6",
-                    "Dialer Button 7",
-                    "Dialer Button 8",
-                    "Dialer Button 9",
-                };
-
-                //Copy values from PortalDialer to my replacement dialer
-                //var dialerControllerList = new List<PortalDialerButtonController>();
-                var dialerControllerList = new PortalDialerButtonController[9];
-
-                var tpHolder = GameObject.Find("HOLDER: Artifact TP");
-                var oldDialer = GameObject.Find("PortalDialer");
-                //var newDialer = GameObject.Find("Dialer Replacement");
-                //var oldDialer = tpHolder.transform.GetChild(2).GetChild(0).GetChild(2).GetChild(10).gameObject;
-                var newDialer = tpHolder.transform.GetChild(2).gameObject;
-
-                Log.Debug(oldDialer.name);
-                Log.Debug(newDialer.name);
-                NetworkServer.Spawn(newDialer);
-
-                foreach (string dialerName in newDialerNames)
-                {
-                    var dialerParent = GameObject.Find(dialerName);
-                    var dialer = GameObject.Find(dialerName + "/PortalDialerButton(Clone)");
-                    if (dialer != null)
-                    {
-                        //var controller = dialer.GetComponent<PortalDialerButtonController>();
-                        dialer.TryGetComponent<PortalDialerButtonController>(out var controller);
-
-                        if (controller != null)
-                        {
-                            dialerControllerList.Append(controller);
-                            Log.Debug("Appended controller to list: " + dialerName);
-                            Log.Debug(controller.ToString());
-                        } else
-                        {
-                            Log.Debug("dialer.GetComponent returned null: " + dialerName);
-                        }
-                    } else
-                    {
-                        Log.Debug("GameObject.Find returned null: " + dialerName);
-                    }
-                }
-                for (var i = 0; i > dialerControllerList.Length; i++)
-                {
-                    //newDialer.GetComponent<PortalDialerController>().buttons.SetValue(dialerControllerList.ElementAt(i), i);
-                    //newDialer.GetComponent<PortalDialerController>().dialingOrder.SetValue(dialerControllerList.ElementAt(i), i);
-
-                    //oldDialer.GetComponent<PortalDialerController>().buttons.ElementAt(i). = dialerControllerList.ElementAt(i);
-                    //oldDialer.GetComponent<PortalDialerController>().dialingOrder.ElementAt(i) = dialerControllerList.ElementAt(i);
-                    oldDialer.GetComponent<PortalDialerController>().buttons.SetValue(dialerControllerList.ElementAt(i), i);
-                    oldDialer.GetComponent<PortalDialerController>().dialingOrder.SetValue(dialerControllerList.ElementAt(i), i);
-                }
-                
-                /*
-                var newActions = newDialer.GetComponent<PortalDialerController>().actions;
-                var oldActions = oldDialer.GetComponent<PortalDialerController>().actions;
-
-                for (var i = 0; i > oldActions.Length; i++)
-                {
-                    newActions[i] = oldActions[i];
-                }
-
-                newDialer.GetComponent<PortalDialerController>().portalSpawnLocation = oldDialer.GetComponent<PortalDialerController>().portalSpawnLocation;
-                newDialer.GetComponent<PortalDialerController>().defaultDestination = oldDialer.GetComponent<PortalDialerController>().defaultDestination;
-                newDialer.GetComponent<PortalDialerController>().alternateDestinations = oldDialer.GetComponent<PortalDialerController>().alternateDestinations;
-                */
-
-
-                //Destroy island
+                //Deactivate and/or destroy objects
                 foreach (string objectName in islandObjectNames)
                 {
                     if (GameObject.Find(objectName) != null)
                     {
-                        GameObject.Find(objectName).SetActive(false);
+                        //GameObject.Find(objectName).SetActive(false);
+                        UnityEngine.Object.Destroy(GameObject.Find(objectName));
                     }
                 }
+
+                //Changing material of various objects to better fit the stage
+                Material metalMat = PromenadeContent.MetalMaterial;
+
+                GameObject powerlineHolder1 = GameObject.Find("Final Zone/PowerLines");
+                string[] miscMetalItems = { "LOP_ArtifactLaptop(Clone)/FW_Crate", "mega teleporter/PowerLine, Huge", "Powerline/SM_PowerLine(Clone)", "FW_CellTowerSnowy(Clone)/HumanLargeCellTowerMesh", "LOP_ArtifactLaptop(Clone)/FW_Crate", "PowerCoil, 1/PowerLine1 (1)" };
+
+                for (int i = 0; i < powerlineHolder1.transform.childCount; i++)
+                {
+                    if (powerlineHolder1.transform.GetChild(i).name.Contains("PowerLine"))
+                    {
+                        powerlineHolder1.transform.GetChild(i).TryGetComponent(out MeshRenderer childMeshRenderer);
+                        childMeshRenderer.material = metalMat;
+                    }
+                }
+                foreach (string objectName in miscMetalItems)
+                {
+                    if (GameObject.Find(objectName) != null)
+                    {
+                        GameObject.Find(objectName).TryGetComponent(out MeshRenderer meshRenderer);
+                        meshRenderer.material = metalMat;
+                    }
+                }
+
             }
         }
 
@@ -212,6 +160,7 @@ namespace Promenade
         public void CollectLanguageRootFolders(List<string> folders)
         {
             folders.Add(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(base.Info.Location), "Language"));
+            folders.Add(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(base.Info.Location), "Plugins/Language"));
         }
 
         private void ConfigSetup()

@@ -22,7 +22,7 @@ MonoBehaviour:
       _settingID: -2021767324
       _valueTypeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      _serializedValue: Simulacrum Only Nodes
+      _serializedValue: Portal Nodes
       _defaultSerializedValue: 
     - _settingName: _offsetUpVector
       _settingID: 1577955846
@@ -48,7 +48,8 @@ MonoBehaviour:
       _valueTypeQualifiedName: RoR2.Navigation.NodeFlags, RoR2, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       _serializedValue: '{"assemblyQualifiedName":"RoR2.Navigation.NodeFlags, RoR2,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","values":"None"}'
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","values":"NoCharacterSpawn,
+        NoChestSpawn, NoShrineSpawn"}'
       _defaultSerializedValue: 
     - _settingName: gateName
       _settingID: -1148318642

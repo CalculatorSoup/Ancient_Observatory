@@ -41,6 +41,8 @@ namespace Promenade.Content
         internal static SceneDef SimuSceneDef;
         internal static Sprite SimuSceneDefPreviewSprite;
         internal static Material SimuBazaarSeer;
+        // metal material for artifact portal
+        internal static Material MetalMaterial;
 
         public static List<Material> SwappedMaterials = new List<Material>();
 
@@ -59,9 +61,12 @@ namespace Promenade.Content
             {
                 contentPack.unlockableDefs.Add(assets);
             }));
-            
 
-            
+            yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<Material[]>)((assets) =>
+            {
+                MetalMaterial = assets.First(a => a.name == "matPRMMetal");
+            }));
+
             yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<Sprite[]>)((assets) =>
             {
                 PromenadeSceneDefPreviewSprite = assets.First(a => a.name == "texAOScenePreview");

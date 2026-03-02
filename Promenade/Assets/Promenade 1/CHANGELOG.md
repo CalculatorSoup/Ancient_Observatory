@@ -1,3 +1,6 @@
+# 1.0.0
+* Added an artifact teleporter, hidden under a building (thanks to Viliger for providing the scripts used to add this!)
+
 # 0.2.2
 * Added Simplified Chinese translation (thanks to JunJun5406 on github for submitting this!)
 * Fixed the materials for gazebos, obelisks, and other models using the 'Two Tone' ramp choice setting instead of 'Smoothed Two Tone'. Lighting on those objects should now look a bit less "harsh" and better overall

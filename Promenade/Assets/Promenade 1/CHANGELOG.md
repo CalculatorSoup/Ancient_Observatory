@@ -1,3 +1,8 @@
+# 1.0.1
+* Added some platforms above the artifact teleporter ledge to drop down without taking lethal fall damage
+* The artifact teleporter is now added using LocationsOfPrecipitation's script
+* Very slightly edited the terrain mesh's vertex colors
+
 # 1.0.0
 * Added an artifact teleporter, hidden under a building (thanks to Viliger for providing the scripts used to add this!)
 

@@ -14,7 +14,6 @@ Material:
   - DOUBLESAMPLE
   - USE_ALPHA_AS_MASK
   - USE_VERTEX_COLORS
-  - USE_VERTICAL_BIAS
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -25,8 +24,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BlueChannelTex:
-        m_Texture: {fileID: 2800000, guid: 2e4d98bd68508c9429fbb5ed70328ab9, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 01a065cd3aa258e4bae699be92198621, type: 3}
+        m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
@@ -50,7 +49,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _GreenChannelTex:
         m_Texture: {fileID: 2800000, guid: 8cbd742e5556a6f4d8cee3e50aebe0f4, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 1.5, y: 1.5}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
@@ -62,7 +61,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
         m_Texture: {fileID: 2800000, guid: c05bd137f27f2184e956419c2e7e00ed, type: 3}
-        m_Scale: {x: 0.1, y: 0.25}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -74,10 +73,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _RedChannelSideTex:
         m_Texture: {fileID: 2800000, guid: 51245d53f0ea88e4cabbc0add0222f60, type: 3}
-        m_Scale: {x: 0.1, y: 0.25}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RedChannelTopTex:
-        m_Texture: {fileID: 2800000, guid: 56e4fbddea9f5094a9c50c1345d1b3cd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8cbd742e5556a6f4d8cee3e50aebe0f4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SplatmapTex:
@@ -86,7 +85,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BlueChannelBias: 1.1
+    - _BlueChannelBias: 1.81
     - _BlueChannelSmoothness: 0
     - _BlueChannelSpecularExponent: 0
     - _BlueChannelSpecularStrength: 0
@@ -95,14 +94,14 @@ Material:
     - _Cull: 2
     - _Cutoff: 0.5
     - _DecalLayer: 1
-    - _Depth: 1
+    - _Depth: 0.344
     - _DetailNormalMapScale: 1
     - _DoublesampleOn: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _GreenChannelBias: 0.66
+    - _GreenChannelBias: 1.57
     - _GreenChannelSmoothness: 0
     - _GreenChannelSpecularExponent: 0
     - _GreenChannelSpecularStrength: 0
@@ -114,7 +113,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RampInfo: 1
-    - _RedChannelBias: 1.2
+    - _RedChannelBias: 1.62
     - _RedChannelSmoothness: 0
     - _RedChannelSpecularExponent: 0.1
     - _RedChannelSpecularStrength: 0
@@ -122,11 +121,11 @@ Material:
     - _SnowOn: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TextureFactor: 0.06
+    - _TextureFactor: 0.02
     - _UVSec: 0
-    - _VerticalBiasOn: 1
+    - _VerticalBiasOn: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.68879795, g: 0.6324315, b: 0.7169812, a: 1}
+    - _Color: {r: 0.5372549, g: 0.50980395, b: 0.5568628, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

@@ -201,12 +201,6 @@
       "dependencies": {},
       "hash": "f6bb7fef22917dfc76a1d879873d924028ab0afe"
     },
-    "jacedadorito-locationsofprecipitation": {
-      "version": "file:LocationsOfPrecipitation",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "kingenderbrine-lobbyskinsfix": {
       "version": "file:LobbySkinsFix",
       "depth": 0,

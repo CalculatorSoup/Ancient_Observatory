@@ -42,7 +42,7 @@ namespace Promenade
 
         public const string Name = "Ancient_Observatory";
 
-        public const string Version = "1.0.1";
+        public const string Version = "1.1.0";
 
         public const string GUID = Author + "." + Name;
 
@@ -71,7 +71,7 @@ namespace Promenade
 
             RoR2.Language.collectLanguageRootFolders += CollectLanguageRootFolders;
 
-            SceneManager.sceneLoaded += ArtifactTeleporterSetup;
+            SceneManager.sceneLoaded += SceneSetup;
 
             RoR2.RoR2Application.onLoadFinished += AddModdedEnemies;
 
@@ -97,10 +97,20 @@ namespace Promenade
 
         // Instantiate Artifact Portal doesn't include props, and some artifact portal props aren't available as prefabs, so instead I just add the prefab with the teleporter + sky meadow island
         // and hide the objects I don't want
-        public void ArtifactTeleporterSetup(Scene newScene, LoadSceneMode loadSceneMode)
+        public void SceneSetup(Scene newScene, LoadSceneMode loadSceneMode)
         {
+            if (newScene.name == "itobservatory_wormsworms")
+            {
+                GameObject sun = GameObject.Find("Directional Light");
+                Light sunComponent = sun.GetComponent<Light>();
+                sunComponent.shadowStrength = 0.3f;
+            }
             if (newScene.name == "observatory_wormsworms")
             {
+                GameObject moonMesh = GameObject.Find("ShatteredMoonMesh");
+                moonMesh.layer = 9; // moving this to the NoCollision layer so the "Moon Light" in the scene can illuminate it
+
+                // Remove unneeded objects from the artifact portal prefab I plopped into the scene
                 string[] islandObjectNames =
                     { "MS_FloatingIsland1", "Final Zone/Grass", "ChainlinkSet", "ChainlinkSet (1)", "ChainlinkSet (2)", "ChainlinkSet (3)", "TP Area Holder/MiscProps",
                 "LShapeScaffolding", "StaircaseScaffolding", "Formula/spmSMGrassSmallCluster", "Formula/spmSMGrassSmallCluster (1)", "Formula/spmSMGrassSmallCluster (2)",

@@ -47247,7 +47247,7 @@ MonoBehaviour:
   monsterSpawnTargetOverride: {fileID: 0}
   lumerianEgg:
     spawnCardReference:
-      m_AssetGUID: 
+      m_AssetGUID: 234cc71a82b0e82468900be4c544c1c8
       m_SubObjectName: 
       m_SubObjectType: 
     spawnCard: {fileID: 0}

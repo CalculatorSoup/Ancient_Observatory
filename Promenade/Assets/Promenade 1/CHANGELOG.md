@@ -1,3 +1,6 @@
+# 1.1.1
+* Fixed Lemurian Eggs not spawning with Artifact of Devotion enabled
+
 # 1.1.0
 * Interactable changes:
   * Reduced interactable credits (580 -> 570) to match Helminth Hatchery

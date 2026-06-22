@@ -24,6 +24,17 @@ MonoBehaviour:
         _useDirectReference: 0
       weight: 0
     includedIfConditionsMet:
+    - dccs: {fileID: 11400000, guid: 23d3c30c9e40aac41bcc7e0aa0c9738c, type: 2}
+      familyDccs:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      weight: 1
+      requiredExpansions:
+      - _asset: {fileID: 0}
+        _address: d4f30c23b971a9b428e2796dc04ae099
+        _useDirectReference: 0
+        _canLoadFromCatalog: 0
     - dccs: {fileID: 11400000, guid: f16a995e9734e064d921f7efb9d4edd7, type: 2}
       familyDccs:
         _asset: {fileID: 0}
@@ -56,12 +67,19 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: 49af11a4a92a21243bd8856d75242111
         _useDirectReference: 0
+      weight: 3
+      requiredExpansions: []
+    - dccs: {fileID: 0}
+      familyDccs:
+        _asset: {fileID: 11400000, guid: 09babd5d007e1294abb2e1ba1a62ce4c, type: 2}
+        _address: 
+        _useDirectReference: 1
       weight: 1
       requiredExpansions: []
     - dccs: {fileID: 0}
       familyDccs:
         _asset: {fileID: 0}
-        _address: 74cc25007c7994343afdbfd1e9ab67a0
+        _address: 62efa3334cf9c7b42ac60d8a55cf5cf4
         _useDirectReference: 0
       weight: 1
       requiredExpansions:
@@ -78,6 +96,17 @@ MonoBehaviour:
       requiredExpansions:
       - _asset: {fileID: 0}
         _address: d4f30c23b971a9b428e2796dc04ae099
+        _useDirectReference: 0
+        _canLoadFromCatalog: 0
+    - dccs: {fileID: 0}
+      familyDccs:
+        _asset: {fileID: 0}
+        _address: 74cc25007c7994343afdbfd1e9ab67a0
+        _useDirectReference: 0
+      weight: 1
+      requiredExpansions:
+      - _asset: {fileID: 0}
+        _address: 234e83997deed274291470be69e7662e
         _useDirectReference: 0
         _canLoadFromCatalog: 0
     includedIfNoConditionsMet: []

@@ -18,7 +18,28 @@ MonoBehaviour:
     cards:
     - spawnCard:
         _asset: {fileID: 0}
-        _address: cf55a1f0cb720ec4eb136a5976013bd0
+        _address: 8d045cb69e583124c9df9c1ac8242b49
+        _useDirectReference: 0
+      selectionWeight: 1
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 5
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+        _canLoadFromCatalog: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+        _canLoadFromCatalog: 0
+    selectionWeight: 3
+  - name: Basic Monsters
+    cards:
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: 0ca64dc7fa66f4e4a88352d08bf15e66
         _useDirectReference: 0
       selectionWeight: 1
       spawnDistance: 0
@@ -34,4 +55,4 @@ MonoBehaviour:
         _address: 
         _useDirectReference: 0
         _canLoadFromCatalog: 0
-    selectionWeight: 2
+    selectionWeight: 3

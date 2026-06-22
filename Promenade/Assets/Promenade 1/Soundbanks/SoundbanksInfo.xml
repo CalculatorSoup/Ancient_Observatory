@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="868460349" Type="User" Language="SFX" Hash="{66C81E76-2859-A45A-E554-CDAD29D51687}">
+			<ShortName>WormAOMusic</ShortName>
+			<Path>WormAOMusic.bnk</Path>
+			<Media>
+				<File Id="135784470" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>Ancient Observatory 1.2.wav</ShortName>
+					<Path>Media/135784470.wem</Path>
+					<CachePath>SFX/Ancient Observatory 1.2_83EF6940.wem</CachePath>
+					<PrefetchSize>6209</PrefetchSize>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="888237864" Name="WORM_AO_Pause_Music">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="792781730" Id="89505537"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="351601992" Id="4279525798"/>
+									<MediaRefs>
+										<MediaRef Id="135784470"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3197315292" Name="WORM_AO_Play_Music_System">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="792781730" Id="89505537"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="351601992" Id="4279525798"/>
+									<MediaRefs>
+										<MediaRef Id="135784470"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3454089347" Name="WORM_AO_Unpause_Music">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="792781730" Id="89505537"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="351601992" Id="4279525798"/>
+									<MediaRefs>
+										<MediaRef Id="135784470"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="151362964" Name="playerHealth"/>
+				<GameParameter Id="3729143042" Name="Volume_MSX"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="351601992" Name="WORM_AO_gameplaySongChoice">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2917324543" Name="AOBossMusic"/>
+						<State Id="4279525798" Name="AOMusic"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="792781730" Name="Music_system">
+					<States>
+						<State Id="89505537" Name="Gameplay"/>
+						<State Id="580146960" Name="Bossfight"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="778026301" Name="SecretLevel"/>
+						<State Id="2607556080" Name="Menu"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A2C7F854-6E0B-B6C2-69A9-A044DED00129}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="151362964" Name="playerHealth"/>
+				<GameParameter Id="1010989040" Name="teleporterPlayerStatus"/>
+				<GameParameter Id="3673881719" Name="Volume_SFX"/>
+				<GameParameter Id="3695994288" Name="Volume_Master"/>
+				<GameParameter Id="3729143042" Name="Volume_MSX"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="351601992" Name="WORM_AO_gameplaySongChoice">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2917324543" Name="AOBossMusic"/>
+						<State Id="4279525798" Name="AOMusic"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="549431000" Name="bossStatus">
+					<States>
+						<State Id="655265632" Name="alive"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2044049779" Name="dead"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="792781730" Name="Music_system">
+					<States>
+						<State Id="89505537" Name="Gameplay"/>
+						<State Id="580146960" Name="Bossfight"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="778026301" Name="SecretLevel"/>
+						<State Id="2607556080" Name="Menu"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{B9076C05-C535-7183-C844-AD8CF522381F}</FileHash>
+</SoundBanksInfo>

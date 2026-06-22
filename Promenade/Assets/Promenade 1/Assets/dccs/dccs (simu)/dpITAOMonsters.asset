@@ -24,7 +24,7 @@ MonoBehaviour:
         _useDirectReference: 0
       weight: 1
     includedIfConditionsMet:
-    - dccs: {fileID: 11400000, guid: 6f306a2b455a008438bbe6382a667e00, type: 2}
+    - dccs: {fileID: 11400000, guid: e22e5db78591a22428dd010b6f428827, type: 2}
       familyDccs:
         _asset: {fileID: 0}
         _address: 
@@ -32,7 +32,7 @@ MonoBehaviour:
       weight: 1
       requiredExpansions:
       - _asset: {fileID: 0}
-        _address: 851f234056d389b42822523d1be6a167
+        _address: d4f30c23b971a9b428e2796dc04ae099
         _useDirectReference: 0
         _canLoadFromCatalog: 0
     - dccs: {fileID: 11400000, guid: 5186fbec5ac252e45a876874a20c28cf, type: 2}

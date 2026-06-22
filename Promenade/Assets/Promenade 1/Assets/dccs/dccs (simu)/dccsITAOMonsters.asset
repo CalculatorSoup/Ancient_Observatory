@@ -54,7 +54,7 @@ MonoBehaviour:
         _canLoadFromCatalog: 0
     - spawnCard:
         _asset: {fileID: 0}
-        _address: 1d23f78593a91a04f818ca9895f4e7d7
+        _address: b79fc0712303aa54c9d50ab51987a66e
         _useDirectReference: 0
       selectionWeight: 1
       spawnDistance: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
     cards:
     - spawnCard:
         _asset: {fileID: 0}
-        _address: 94ec3e9c9692ff84a99fd8bb1962cbb0
+        _address: f7a1bc2e4756beb448d61e9e1421a9e1
         _useDirectReference: 0
       selectionWeight: 2
       spawnDistance: 0
@@ -186,7 +186,7 @@ MonoBehaviour:
         _canLoadFromCatalog: 0
     - spawnCard:
         _asset: {fileID: 0}
-        _address: 79a0217696fe62f40a8e88f039987a2c
+        _address: c0363b855d43fc04d8e82d1ef505d972
         _useDirectReference: 0
       selectionWeight: 2
       spawnDistance: 0

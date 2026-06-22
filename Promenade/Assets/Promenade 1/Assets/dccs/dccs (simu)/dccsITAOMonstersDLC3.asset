@@ -14,27 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCardCategorySelection: {fileID: 11400000, guid: 43d16fdc486506f48b278d4db084794c, type: 2}
   categories:
-  - name: Champions
-    cards:
-    - spawnCard:
-        _asset: {fileID: 0}
-        _address: 14bf22df446f37549aa65eb724c1ddda
-        _useDirectReference: 0
-      selectionWeight: 1
-      spawnDistance: 0
-      preventOverhead: 0
-      minimumStageCompletions: 0
-      requiredUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-        _canLoadFromCatalog: 0
-      forbiddenUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-        _canLoadFromCatalog: 0
-    selectionWeight: 2
   - name: Minibosses
     cards:
     - spawnCard:

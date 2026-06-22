@@ -47,7 +47,11 @@
         "Sandswept.dll",
         "EnemiesReturns.dll",
         "FHCSharp.dll",
-        "Starstorm2.dll"
+        "Starstorm2.dll",
+        "AncientWisp.dll",
+        "AK.Wwise.Unity.API.dll",
+        "AK.Wwise.Unity.MonoBehaviour.dll",
+        "AK.Wwise.Unity.API.WwiseTypes.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

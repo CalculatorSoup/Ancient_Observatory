@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AssemblyDefinitions
   m_EditorClassIdentifier: 
   StagingPaths:
-  - <MSUBuildPath>
+  - <MSUBuildPathPlugins>
   definitions:
   - {fileID: 5897886265953266890, guid: d7ce7f801c0cf6f4fa1736cc046a4cca, type: 3}
 --- !u!114 &-2624514360056421071
@@ -49,6 +49,7 @@ MonoBehaviour:
   - {fileID: 7292789147763839772}
   - {fileID: 2033328667324254867}
   - {fileID: 5014599077599716013}
+  - {fileID: 5325828738753688955}
   - {fileID: -2624514360056421071}
   identity: {fileID: 2493102646770600095}
   QuickAccess: 1
@@ -86,9 +87,10 @@ MonoBehaviour:
   - <ManifestPluginStaging>
   Author: wormsworms
   Name: Ancient_Observatory
-  Description: An alternate Stage 5 map set in a dormant observatory on a vast floating
-    island. Also includes a Simulacrum variant!
-  Version: 1.1.1
+  Description: An alternate Stage 5 map set in a dormant observatory, resting high
+    above the planet's surface. 2.0.0 - overhauled the map (and added new stage music
+    by Jared Damron!)
+  Version: 2.0.0
   Dependencies:
   - {fileID: 11400000, guid: d7d8ed5ac59df8acbbc4983f1ebba079, type: 2}
   - {fileID: 11400000, guid: 98480314448d120c05e373472456e52b, type: 2}
@@ -98,6 +100,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 48f050b3512173aba0a952f846a557fa, type: 2}
   - {fileID: 11400000, guid: bff73382628f698c89c1d9ae43c8f350, type: 2}
   - {fileID: 11400000, guid: a644a53693d44639c70550096ce74b93, type: 2}
+  - {fileID: 11400000, guid: 2f0230b12529cadf82e6b0db93950626, type: 2}
 --- !u!114 &5014599077599716013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,8 +118,25 @@ MonoBehaviour:
   includeMetaFiles: 0
   files:
   - {fileID: 4900000, guid: e8dd86063e669fa4b9b05482411a0253, type: 3}
-  - {fileID: 2800000, guid: bc3b3873e77b39a45a840d0870325ed2, type: 3}
+  - {fileID: 2800000, guid: 59f7c7e3869937d4bbf71bab48b7a38b, type: 3}
   - {fileID: 4900000, guid: 788796e68d2b6244c93048c0591599c6, type: 3}
+--- !u!114 &5325828738753688955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b243ff405b33b94dbf5b6775dd9aa33, type: 3}
+  m_Name: Files
+  m_EditorClassIdentifier: 
+  StagingPaths:
+  - <MSUBuildPathPlugins>
+  includeMetaFiles: 0
+  files:
+  - {fileID: 102900000, guid: 83cf5d2e3a129b246a7fef2e640f0361, type: 3}
 --- !u!114 &7292789147763839772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,12 +150,12 @@ MonoBehaviour:
   m_Name: AssetBundleDefinitions
   m_EditorClassIdentifier: 
   StagingPaths:
-  - <MSUBuildPath>
+  - <MSUBuildPathPlugins>
   assetBundles:
-  - assetBundleName: ObservatoryAssets
+  - assetBundleName: observatoryassets
     assets:
     - {fileID: 102900000, guid: 5a3a86a5b5fcf9047a254f77ab9a15a7, type: 3}
-  - assetBundleName: ObservatoryScene
+  - assetBundleName: observatoryscenes
     assets:
-    - {fileID: 102900000, guid: 4a9099e28cd127847a382d09476c0449, type: 3}
-    - {fileID: 102900000, guid: ea4c8929ecf4d424ea88ee105f4a1527, type: 3}
+    - {fileID: 102900000, guid: 425eaf1adf506944286c42be9b58cfd3, type: 3}
+    - {fileID: 102900000, guid: 4d950c750147ac04ba421abb3e838c27, type: 3}

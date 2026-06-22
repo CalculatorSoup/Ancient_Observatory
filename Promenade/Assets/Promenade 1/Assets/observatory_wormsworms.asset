@@ -23,7 +23,7 @@ MonoBehaviour:
   requiredExpansion: {fileID: 0}
   nameToken: WORM_MAP_AO_NAME
   subtitleToken: WORM_MAP_AO_SUBTITLE
-  previewTexture: {fileID: 2800000, guid: aad63e306d5efbd48903a48cca33c863, type: 3}
+  previewTexture: {fileID: 2800000, guid: bdc7f5d9dd4019e49b5b7fa3f84b8793, type: 3}
   previewTextureReference:
     m_AssetGUID: 
     m_SubObjectName: 

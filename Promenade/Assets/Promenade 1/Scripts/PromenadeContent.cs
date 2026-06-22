@@ -24,8 +24,8 @@ namespace Promenade.Content
     public static class PromenadeContent
     {
 
-        internal const string ScenesAssetBundleFileName = "ObservatoryScene";
-        internal const string AssetsAssetBundleFileName = "ObservatoryAssets";
+        internal const string ScenesAssetBundleFileName = "observatoryscenes";
+        internal const string AssetsAssetBundleFileName = "observatoryassets";
 
         private static AssetBundle _scenesAssetBundle;
         private static AssetBundle _assetsAssetBundle;
@@ -41,8 +41,11 @@ namespace Promenade.Content
         internal static SceneDef SimuSceneDef;
         internal static Sprite SimuSceneDefPreviewSprite;
         internal static Material SimuBazaarSeer;
-        // metal material for artifact portal
+        // metal material for artifact portal & stone material for workshop prefabs
         internal static Material MetalMaterial;
+        internal static Material StoneMaterial;
+        internal static Material ITStoneMaterial;
+
 
         public static List<Material> SwappedMaterials = new List<Material>();
 
@@ -64,15 +67,18 @@ namespace Promenade.Content
 
             yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<Material[]>)((assets) =>
             {
-                MetalMaterial = assets.First(a => a.name == "matPRMMetal");
+                MetalMaterial = assets.First(a => a.name == "matAOMetal");
+                StoneMaterial = assets.First(a => a.name == "matAOStone");
+                ITStoneMaterial = assets.First(a => a.name == "matITAOStone");
             }));
-
+            
+            /*
             yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<Sprite[]>)((assets) =>
             {
                 PromenadeSceneDefPreviewSprite = assets.First(a => a.name == "texAOScenePreview");
                 SimuSceneDefPreviewSprite = assets.First(a => a.name == "texAOScenePreview");
             }));
-            
+            */
 
             yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<SceneDef[]>)((assets) =>
             {
@@ -86,6 +92,8 @@ namespace Promenade.Content
 
             PromenadeSceneDef.portalMaterial = R2API.StageRegistration.MakeBazaarSeerMaterial((Texture2D)PromenadeSceneDef.previewTexture);
 
+            // old (vanilla) music selection
+            /*
             var mainTrackDefRequest = Addressables.LoadAssetAsync<MusicTrackDef>("RoR2/Base/Common/MusicTrackDefs/muSong14.asset");
             while (!mainTrackDefRequest.IsDone)
             {
@@ -96,14 +104,18 @@ namespace Promenade.Content
             {
                 yield return null;
             }
+            */
+
             var bossTrackDefRequest = Addressables.LoadAssetAsync<MusicTrackDef>("RoR2/Base/Common/MusicTrackDefs/muSong23.asset");
             while (!bossTrackDefRequest.IsDone)
             {
                 yield return null;
             }
-            PromenadeSceneDef.mainTrack = mainTrackDefRequest.Result;
+
+            ContentProvider.SetupMusic();
+            //PromenadeSceneDef.mainTrack = mainTrackDefRequest.Result;
             PromenadeSceneDef.bossTrack = bossTrackDefRequest.Result;
-            SimuSceneDef.mainTrack = simuTrackDefRequest.Result;
+            //SimuSceneDef.mainTrack = simuTrackDefRequest.Result;
             SimuSceneDef.bossTrack = bossTrackDefRequest.Result;
 
             if (Promenade.enableRegular.Value)

@@ -1,18 +1,22 @@
 # Ancient Observatory
-An alternate Stage 5 environment, created from scratch in the style of vanilla maps, set on a vast floating island populated with ruins and blanketed by a canopy of trees. If you took Sky Meadow, Desolate Forest and Temple of the Elders from RoR1 and mixed them in a blender, it would make this map, probably.
+An alternate Stage 5 environment set in a dormant celestial observatory, overgrown with glowing plants that sort of resemble the starry night sky.
 
-The map's a bit larger than Sky Meadow and has a somewhat multi-layered layout, with cliffs, slopes, and caves to navigate. There are jump pads scattered throughout to help with traversal.
+It's a wide and expansive map with rolling hills, cliffs and large multi-layered buildings to navigate. There are launch pads scattered throughout to help with getting around.
 
 ![](https://github.com/CalculatorSoup/Ancient_Observatory/blob/main/Promenade/Assets/preview%20ruins.png?raw=true)
 
 ## Simulacrum
-This mod also includes a Void replication of Ancient Observatory with some (very) minor changes, exclusive to SotV's Simulacrum gamemode.
+There is also a Void replication of Ancient Observatory with some (very) minor changes, exclusive to SotV's Simulacrum gamemode.
 
 ![](https://github.com/CalculatorSoup/Ancient_Observatory/blob/main/Promenade/Assets/preview%20simulacrum.png?raw=true)
+
+## Music
+Ancient Observatory has a unique music track, '[Orb Knowledge](https://www.youtube.com/watch?v=8FRuaXpz70U)', made for the stage by Jared Damron (@FakeBees on Discord)! You can check out his other music on his [YouTube channel](https://www.youtube.com/@jareddamron5977).
 
 ## Other Features
 - Config options
   - Ancient Observatory can appear (true/false)
+  - Ancient Observatory - map lighting (Night, Day, Night After Looping, Day After Looping, Random)
   - Simulacrum variant can appear (true/false)
   - Simulacrum variant can appear as Stage 1 (true/false)
   - Toggles for modded enemies
@@ -20,6 +24,7 @@ This mod also includes a Void replication of Ancient Observatory with some (very
   - [EnemiesReturns](https://thunderstore.io/package/Risky_Sleeps/EnemiesReturns/): Swift, Colossus
   - [Sandswept](https://thunderstore.io/package/SandsweptTeam/Sandswept/): Cannonball Jellyfish
   - [ForgottenRelics](https://thunderstore.io/package/pseudopulse/RelicsFix/): Brass Monolith
+  - [Ancient Wisp](https://thunderstore.io/package/Moffein/Ancient_Wisp/)
 - Orb
 
 ## Bugs / Issues

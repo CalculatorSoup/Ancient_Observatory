@@ -14,27 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCardCategorySelection: {fileID: 11400000, guid: c4e5123f029b9ee41abf60e6f16de29c, type: 2}
   categories:
-  - name: Minibosses
-    cards:
-    - spawnCard:
-        _asset: {fileID: 0}
-        _address: 3ae19a6504f8bbf4fa5df938ea81fb1d
-        _useDirectReference: 0
-      selectionWeight: 1
-      spawnDistance: 0
-      preventOverhead: 0
-      minimumStageCompletions: 2
-      requiredUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-        _canLoadFromCatalog: 0
-      forbiddenUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-        _canLoadFromCatalog: 0
-    selectionWeight: 2
   - name: Basic Monsters
     cards:
     - spawnCard:

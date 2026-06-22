@@ -73,4 +73,23 @@ namespace FSCStage
             }
         }
     }
+
+    public class IsAncientWisp
+    {
+        private static bool? _enabled;
+        public static bool enabled
+
+
+        {
+            get
+            {
+                if (_enabled == null)
+                {
+                    _enabled = Chainloader.PluginInfos.ContainsKey("com.Moffein.AncientWisp");
+                }
+                return (bool)_enabled;
+            }
+
+        }
+    }
 }

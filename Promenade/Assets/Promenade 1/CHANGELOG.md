@@ -1,3 +1,52 @@
+# 2.0.0
+This update is a complete overhaul of Ancient Observatory, almost from the ground up. After making four whole other maps following this one, I felt like I'd learned enough that I wanted to go back and polish this one. It's very different now in a lot of ways, but I think it's an improvement overall.
+
+The map's visuals were redone (now set at night with more unique foliage and props) and the map's layout was changed beyond recognition in many areas to hopefully make it feel a little more "cohesive," or at least more fun to navigate. A config option was added to bring the map's lighting closer to pre-2.0 if you prefer the old look.
+
+---
+
+Also, this update includes a new music track, created by Jared Damron (@FakeBees on Discord) for the stage! Thanks to him for contributing it! You can also check out his other music on [YouTube](https://www.youtube.com/@jareddamron5977) if you enjoyed
+
+---
+
+- **Layout changes:**
+  - The holes near the center of the map were filled in and the cave below the orrery (big floating thing with the big orb) was removed entirely. The floating gazebos were removed
+  - Stretched out the hill that previously had a hole that fell into the cave. It's now directly connected to the orrery
+  - The weird double-layer rock formation on the opposite side as the red buildings was removed and replaced with a new red building
+  - Shrunk the gazebos, added a couple more, and added "layer cake" foundations with little ponds on the lower layers.
+  - The large red building's second floor's giant gaping hole was filled up and the ramp to the second floor was moved closer to the walls. Launch pads to the second floor were added. The launch pad to reach the smaller building was replaced by a bridge
+  - The small red building's second floor was removed, but a side balcony was added
+  - Extra hills and cliffs were added near the small red building and the flat, empty area between the large red building and the orrery
+  - Added several launch pads throughout the map
+  - Removed most of the previous random variations since there was no spot left for them, really (but also they were mostly just weirdly-shaped floating rocks anyway...)
+
+- **Visual changes:**
+  - The map is now set at night and the sky is more dense with stars
+    - Also added a config option to revert the lighting changes. You can also make it randomly swap between the old and new visuals if you'd like
+  - The Conduit Canyon trees were replaced with new trees unique to this map. There is also a variety of other foliage now (glowing vines, bushes, stumps and fallen logs)
+  - The lamps around the map were replaced by giant glowing bulb plants
+  - Various pieces of furniture were added to make the buildings feel a little more "lived in" 
+  - The orbiting structures in the skybox were removed. Instead, there are tall crags with structures and foliage placed on them
+  - The almost-unnoticeable green dust motes are now much more visible. The wind gusts are now more subtle
+
+- **Monster pool changes:**
+  - Replaced Alloy Vultures with Imps
+  - Replaced Children with Alpha Constructs
+  - Replaced Grandparents with Solus Control Units
+  - Removed Solus Amalgamators
+  - Added Void Devastators (after looping)
+  - Simulacrum variant now has largely the same monster pool, but with minor edits: Mini Mushrums appear, but Greater Wisps and Halcyonites do not
+  - Added [Ancient Wisps](https://thunderstore.io/package/Moffein/Ancient_Wisp/)
+    - Also added a config setting to toggle Ancient Wisps
+
+- **Other changes:**
+  - Added new stage music - *[Orb Knowledge](https://www.youtube.com/watch?v=8FRuaXpz70U)*
+    - Boss music is still *Antarctic Oscillation*
+    - Also added a dependency on R2API Sound
+  - Swapped broken Junk Drones with Jailer Drones
+  - Added a couple new Newt Altar spots and relocated one that was previously behind a pillar in an overhang (it is now behind a tree.)
+  - The vertical banners on the central orrery now have collision
+
 # 1.1.1
 * Fixed Lemurian Eggs not spawning with Artifact of Devotion enabled
 

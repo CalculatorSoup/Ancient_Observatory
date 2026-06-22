@@ -57,7 +57,7 @@ MonoBehaviour:
         _canLoadFromCatalog: 0
     - spawnCard:
         _asset: {fileID: 0}
-        _address: d8aad1d9c0616c644869900039f7e3f3
+        _address: 4e0d52fe3545f474b9076987b6ac92ec
         _useDirectReference: 0
       selectionWeight: 2
       spawnDistance: 0

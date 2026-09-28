@@ -88,9 +88,9 @@ MonoBehaviour:
   Author: wormsworms
   Name: Ancient_Observatory
   Description: An alternate Stage 5 map set in a dormant observatory, resting high
-    above the planet's surface. 2.0.0 - overhauled the map (and added new stage music
-    by Jared Damron!)
-  Version: 2.0.0
+    above the planet's surface. Includes a Simulacrum variant and music by Jared
+    Damron!
+  Version: 2.1.0
   Dependencies:
   - {fileID: 11400000, guid: d7d8ed5ac59df8acbbc4983f1ebba079, type: 2}
   - {fileID: 11400000, guid: 98480314448d120c05e373472456e52b, type: 2}

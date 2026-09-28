@@ -11,7 +11,7 @@ There is also a Void replication of Ancient Observatory with some (very) minor c
 ![](https://github.com/CalculatorSoup/Ancient_Observatory/blob/main/Promenade/Assets/preview%20simulacrum.png?raw=true)
 
 ## Music
-Ancient Observatory has a unique music track, '[Orb Knowledge](https://www.youtube.com/watch?v=8FRuaXpz70U)', made for the stage by Jared Damron (@FakeBees on Discord)! You can check out his other music on his [YouTube channel](https://www.youtube.com/@jareddamron5977).
+Ancient Observatory has a unique music track, '[Orb Knowledge](https://www.youtube.com/watch?v=8FRuaXpz70U)', created for the stage by Jared Damron (@FakeBees on Discord)!! You can find it, as well as his other work, on his [YouTube channel](https://www.youtube.com/@jareddamron5977)!
 
 ## Other Features
 - Config options
@@ -23,6 +23,7 @@ Ancient Observatory has a unique music track, '[Orb Knowledge](https://www.youtu
 - Some modded enemies can appear if their respective mod is enabled
   - [EnemiesReturns](https://thunderstore.io/package/Risky_Sleeps/EnemiesReturns/): Swift, Colossus
   - [Sandswept](https://thunderstore.io/package/SandsweptTeam/Sandswept/): Cannonball Jellyfish
+  - [Starstorm 2](https://thunderstore.io/c/riskofrain2/p/TeamMoonstorm/Starstorm2/): Security Chest
   - [ForgottenRelics](https://thunderstore.io/package/pseudopulse/RelicsFix/): Brass Monolith
   - [Ancient Wisp](https://thunderstore.io/package/Moffein/Ancient_Wisp/)
 - Orb

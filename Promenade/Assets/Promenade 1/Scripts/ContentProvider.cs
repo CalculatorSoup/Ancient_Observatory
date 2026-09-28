@@ -57,7 +57,7 @@ namespace Promenade.Content
             var mainCustomTrack = ScriptableObject.CreateInstance<SoundAPI.Music.CustomMusicTrackDef>();
             (mainCustomTrack as ScriptableObject).name = "AncientObservatoryMainMusic";
             mainCustomTrack.cachedName = "AncientObservatoryMainMusic";
-            mainCustomTrack.comment = "\r\nJared Damron - Ancient Observatory stage theme\r\nancientobservatory_wormsworms";
+            mainCustomTrack.comment = "\r\nJared Damron - Orb Knowledge\r\nancientobservatory_wormsworms";
             mainCustomTrack.CustomStates = new List<SoundAPI.Music.CustomMusicTrackDef.CustomState>();
 
             var cstate1 = new SoundAPI.Music.CustomMusicTrackDef.CustomState();

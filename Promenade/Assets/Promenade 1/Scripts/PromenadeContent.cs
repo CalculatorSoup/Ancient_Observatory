@@ -92,8 +92,6 @@ namespace Promenade.Content
 
             PromenadeSceneDef.portalMaterial = R2API.StageRegistration.MakeBazaarSeerMaterial((Texture2D)PromenadeSceneDef.previewTexture);
 
-            // old (vanilla) music selection
-            /*
             var mainTrackDefRequest = Addressables.LoadAssetAsync<MusicTrackDef>("RoR2/Base/Common/MusicTrackDefs/muSong14.asset");
             while (!mainTrackDefRequest.IsDone)
             {
@@ -104,7 +102,6 @@ namespace Promenade.Content
             {
                 yield return null;
             }
-            */
 
             var bossTrackDefRequest = Addressables.LoadAssetAsync<MusicTrackDef>("RoR2/Base/Common/MusicTrackDefs/muSong23.asset");
             while (!bossTrackDefRequest.IsDone)
@@ -112,10 +109,16 @@ namespace Promenade.Content
                 yield return null;
             }
 
-            ContentProvider.SetupMusic();
-            //PromenadeSceneDef.mainTrack = mainTrackDefRequest.Result;
+            if (Promenade.mapOST.Value == Promenade.preferredOST.Orb_Knowledge)
+            {
+                ContentProvider.SetupMusic();
+            } else
+            {
+                PromenadeSceneDef.mainTrack = mainTrackDefRequest.Result;
+                SimuSceneDef.mainTrack = simuTrackDefRequest.Result;
+            }
+
             PromenadeSceneDef.bossTrack = bossTrackDefRequest.Result;
-            //SimuSceneDef.mainTrack = simuTrackDefRequest.Result;
             SimuSceneDef.bossTrack = bossTrackDefRequest.Result;
 
             if (Promenade.enableRegular.Value)

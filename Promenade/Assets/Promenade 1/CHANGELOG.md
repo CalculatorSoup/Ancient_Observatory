@@ -1,3 +1,18 @@
+# 2.1.0
+- **Layout changes:**
+  - Added a new random layout variation! There's now a spiral rock formation that can appear near the Study/Library building
+  - Updated the stone henge variation; it's now placed on an extension of the map's terrain, rather than kind of awkwardly plopped in the middle of a dirt path
+  - The library building's central windows were converted to balconies, making it much easier to get a view of the whole stage from inside
+  - Shuffled around and, in some cases, removed trees and other clutter to help with scouting faraway interactables in some areas (normal variant only)
+    - You still can't really get a perfect view of the whole map from any given angle, but there were a few high vantage points where it felt like you should've been able to see further out if it wasn't for a bunch of trees and rocks getting in the way. Hopefully this helps with that a bit
+- **Other Changes:**
+  - Simulacrum: Added a geyser in front of the library building, allowing you to quickly get up if you fall off the balcony
+  - Added more bookshelves to the Study/Library building and replaced the sides' grass floors with rugs
+  - Decreased mid fog opacity at night (230 -> 215) and increased 'fog one' (0.1 -> 0.12) to make the fog a bit less dense
+  - Prevented chests/shrines from spawning behind the rocks in the bottom central pool
+  - Added a config option to switch back to the stage's original music
+  - Starstorm 2: Added Security Chests to the stage! (Also added a config option to toggle them)
+
 # 2.0.0
 This update is a complete overhaul of Ancient Observatory, almost from the ground up. After making four whole other maps following this one, I felt like I'd learned enough that I wanted to go back and polish this one. It's very different now in a lot of ways, but I think it's an improvement overall.
 
@@ -5,7 +20,7 @@ The map's visuals were redone (now set at night with more unique foliage and pro
 
 ---
 
-Also, this update includes a new music track, created by Jared Damron (@FakeBees on Discord) for the stage! Thanks to him for contributing it! You can also check out his other music on [YouTube](https://www.youtube.com/@jareddamron5977) if you enjoyed
+Also, this update includes a new music track, created by Jared Damron (@FakeBees on Discord) for the stage! Thanks to him for contributing it! You can also check out his other music on [YouTube](https://www.youtube.com/@jareddamron5977) if you enjoyed, !
 
 ---
 

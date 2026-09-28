@@ -7,6 +7,6 @@
 
 		"UNLOCKABLE_LOG_STAGES_AOSCENE": "Environment Log: Ancient Observatory",
 		
-		"WORM_CHAT_AO_SONGPLAYING": "<style=cWorldEvent>♪ Now Playing: Jared Damron - Orb Knowledge ♪</style>"
+		"WORM_CHAT_AO_SONGPLAYING": "<style=cWorldEvent>♪ Now Playing: Jared Damron - Orb Knowledge</style>"
 	}
 }

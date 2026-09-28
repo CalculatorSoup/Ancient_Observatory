@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 001710543eb860843b98004a578bdfa9
+guid: d325b211906d05f4cbe8e30ff12b5d21
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Cloud
-    second: {fileID: 2100000, guid: 08ca532072ccd6b41a745c2c6e40adb5, type: 2}
+      name: Terrain.001
+    second: {fileID: 2100000, guid: b46080093972b854db73c9dbe3ac0775, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -42,7 +42,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1

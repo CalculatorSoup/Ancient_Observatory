@@ -42,7 +42,7 @@ namespace Promenade
 
         public const string Name = "Ancient_Observatory";
 
-        public const string Version = "2.0.0";
+        public const string Version = "2.1.0";
 
         public const string GUID = Author + "." + Name;
 
@@ -52,6 +52,7 @@ namespace Promenade
         public static ConfigEntry<bool> enableSimulacrum;
         public static ConfigEntry<bool> stage1Simulacrum;
         public static ConfigEntry<aoLightingMode> observatoryLighting;
+        public static ConfigEntry<preferredOST> mapOST;
 
         public static ConfigEntry<bool> toggleSwift;
         public static ConfigEntry<bool> toggleColossus;
@@ -59,6 +60,8 @@ namespace Promenade
         public static ConfigEntry<bool> toggleCannonballJellyfish;
 
         public static ConfigEntry<bool> toggleBrassMonolith;
+
+        public static ConfigEntry<bool> toggleMimic;
 
         public static ConfigEntry<bool> toggleAncientWisp;
 
@@ -69,6 +72,12 @@ namespace Promenade
             NightAfterLooping,
             DayAfterLooping,
             Random
+        }
+
+        public enum preferredOST
+        {
+            Orb_Knowledge,
+            The_Rain_Formerly_Known_As_Purple
         }
 
         private void Awake()
@@ -101,6 +110,11 @@ namespace Promenade
             if (IsSandswept.enabled)
             {
                 SandsweptCompat.AddEnemies(); //Cannonball Jellyfish
+            }
+
+            if (IsStarstorm2.enabled)
+            {
+                Starstorm2Compat.AddEnemies(); //Mimic
             }
 
             if (IsForgottenRelics.enabled)
@@ -241,8 +255,10 @@ namespace Promenade
 
             string bgSongToken = "WORM_CHAT_AO_SONGPLAYING";
 
-            Chat.SendBroadcastChat(new Chat.SimpleChatMessage { baseToken = bgSongToken });
-
+            if (PromenadeContent.PromenadeSceneDef.mainTrack.cachedName == "AncientObservatoryMainMusic")
+            {
+                Chat.SendBroadcastChat(new Chat.SimpleChatMessage { baseToken = bgSongToken });
+            }
         }
 
         private void ChangeLighting()
@@ -349,9 +365,14 @@ namespace Promenade
                                        "If set to false, Ancient Observatory will only appear after clearing at least one stage in the Simulacrum.");
             observatoryLighting =
                 base.Config.Bind<aoLightingMode>("00 - Stages",
-                           "Ancient Observatory - Stage Lighting",
-                           aoLightingMode.DayAfterLooping,
-                           "Set the stage's lighting. Day is the map's original lighting, prior to version 2.0.0." );
+                                        "Ancient Observatory - Stage Lighting",
+                                        aoLightingMode.DayAfterLooping,
+                                        "Set the stage's lighting. Day is the map's original lighting, prior to version 2.0.0." );
+            mapOST =
+                base.Config.Bind<preferredOST>("00 - Stages",
+                                        "Soundtrack - Stage Music",
+                                        preferredOST.Orb_Knowledge,
+                                        "Set the stage's soundtrack. 'The Rain Formerly Known as Purple' was the original track used prior to version 2.0.0.");
             toggleSwift =
                 base.Config.Bind<bool>("01 - Monsters: EnemiesReturns",
                                        "Enable Swift",
@@ -372,6 +393,11 @@ namespace Promenade
                                        "Enable Brass Monolith",
                                        true,
                                        "If set to false, Brass Monoliths will not appear in Ancient Observatory.");
+            toggleMimic =
+                                        base.Config.Bind<bool>("03 - Monsters: Starstorm 2",
+                                        "Enable Security Chest",
+                                        true,
+                                        "If set to false, Security Chests will not appear in Ancient Observatory.");
             toggleAncientWisp =
                 base.Config.Bind<bool>("04 - Monsters: Other",
                                         "Enable Ancient Wisp",

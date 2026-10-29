@@ -1,3 +1,13 @@
+# 2.2.0
+- Added support for Hallowed Concepts!
+  - Added DLC4 interactables. No enemies, though
+  - Added spawn points for Wakes and Ritual Gongs
+  - Added a Reincarnation zone for Dinners lovers (but only if Lunch mode is disabled..)
+    - Takes you straight to the secret boss, like the one in Helminth Hatchery
+- Fixed Starstorm 2 enemies not appearing
+- Fixed Study/Library handrail beams being visibly off-center. Sorry if you noticed this
+- Fixed an extra piece of terrain added in 2.1.0 sticking through the ground
+
 # 2.1.0
 - **Layout changes:**
   - Added a new random layout variation! There's now a spiral rock formation that can appear near the Study/Library building
